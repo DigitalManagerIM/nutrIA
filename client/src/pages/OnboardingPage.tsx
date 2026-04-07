@@ -276,7 +276,7 @@ export default function OnboardingPage() {
               <AnimatePresence>
                 {hasSmartScale === true && (
                   <motion.div initial={{ opacity: 0, height: 0 }} animate={{ opacity: 1, height: 'auto' }} exit={{ opacity: 0, height: 0 }}>
-                    <input ref={scaleRef} type="file" accept="image/*" capture="environment" className="hidden" onChange={handleScaleFile} />
+                    <input ref={scaleRef} type="file" accept="image/*" className="hidden" onChange={handleScaleFile} />
                     {scalePreview ? (
                       <div className="relative">
                         <img src={scalePreview} alt="Báscula" className="w-full h-40 object-cover rounded-card" />
