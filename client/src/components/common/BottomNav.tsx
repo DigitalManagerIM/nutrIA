@@ -3,13 +3,13 @@ import { motion, AnimatePresence } from 'framer-motion';
 import { useState } from 'react';
 
 const leftTabs = [
-  { to: '/dashboard', icon: '🏠', label: 'Inicio' },
-  { to: '/food',      icon: '🍽️', label: 'Nutrición' },
+  { to: '/dashboard', iconSrc: '/icons/inicio.svg',    label: 'Inicio' },
+  { to: '/food',      iconSrc: '/icons/nutricion.svg', label: 'Nutrición' },
 ];
 
 const rightTabs = [
-  { to: '/training', icon: '🏋️', label: 'Entreno' },
-  { to: '/stats',    icon: '👤', label: 'Mi Perfil' },
+  { to: '/training', iconSrc: '/icons/entreno.svg', label: 'Entreno' },
+  { to: '/stats',    iconSrc: '/icons/perfil.svg',  label: 'Mi Perfil' },
 ];
 
 export default function BottomNav() {
@@ -81,7 +81,13 @@ export default function BottomNav() {
                     className="absolute top-0 left-1/2 -translate-x-1/2 w-8 h-1 bg-primary rounded-b-full"
                   />
                 )}
-                <span className={`text-xl ${active ? 'scale-110' : 'opacity-50'} transition-all`}>{tab.icon}</span>
+                <img
+                  src={tab.iconSrc}
+                  alt={tab.label}
+                  width={24}
+                  height={24}
+                  className={`transition-all ${active ? 'scale-110' : 'opacity-40'}`}
+                />
                 <span className={`text-[10px] font-semibold mt-0.5 ${active ? 'text-primary' : 'text-gray-400'}`}>{tab.label}</span>
               </NavLink>
             );
@@ -109,7 +115,13 @@ export default function BottomNav() {
                     className="absolute top-0 left-1/2 -translate-x-1/2 w-8 h-1 bg-primary rounded-b-full"
                   />
                 )}
-                <span className={`text-xl ${active ? 'scale-110' : 'opacity-50'} transition-all`}>{tab.icon}</span>
+                <img
+                  src={tab.iconSrc}
+                  alt={tab.label}
+                  width={24}
+                  height={24}
+                  className={`transition-all ${active ? 'scale-110' : 'opacity-40'}`}
+                />
                 <span className={`text-[10px] font-semibold mt-0.5 ${active ? 'text-primary' : 'text-gray-400'}`}>{tab.label}</span>
               </NavLink>
             );
