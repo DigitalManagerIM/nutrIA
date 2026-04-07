@@ -1,0 +1,41 @@
+# Dependencies
+node_modules/
+
+# Build output
+dist/
+client/dist/
+
+# Environment variables — NEVER commit these
+.env
+.env.local
+.env.production
+server/.env
+client/.env
+client/.env.production
+
+# Firebase service account — contains private key, NEVER commit
+firebase-service-account.json
+server/firebase-service-account.json
+*-service-account.json
+
+# Uploads (user files, may contain personal data)
+uploads/
+server/uploads/
+
+# Logs
+*.log
+npm-debug.log*
+
+# OS
+.DS_Store
+Thumbs.db
+
+# IDE
+.vscode/
+.idea/
+
+# Prisma generated client (regenerated on install)
+server/node_modules/.prisma/
+
+# TypeScript cache
+*.tsbuildinfo

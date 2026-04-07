@@ -1,0 +1,82 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  * {
+    -webkit-tap-highlight-color: transparent;
+  }
+
+  html {
+    font-family: 'Nunito', sans-serif;
+  }
+
+  body {
+    @apply bg-bg-light text-[#2D3748] min-h-screen;
+    overscroll-behavior: none;
+  }
+}
+
+@layer components {
+  .app-container {
+    @apply max-w-app mx-auto min-h-screen relative bg-white shadow-xl;
+  }
+
+  .btn-primary {
+    @apply bg-primary text-white font-bold py-3 px-6 rounded-card
+           min-h-[48px] active:scale-95 transition-all duration-150
+           disabled:opacity-50 disabled:cursor-not-allowed;
+  }
+
+  .btn-secondary {
+    @apply bg-secondary text-white font-bold py-3 px-6 rounded-card
+           min-h-[48px] active:scale-95 transition-all duration-150
+           disabled:opacity-50 disabled:cursor-not-allowed;
+  }
+
+  .btn-ghost {
+    @apply text-primary font-semibold py-3 px-6 rounded-card
+           min-h-[48px] active:scale-95 transition-all duration-150;
+  }
+
+  .card {
+    @apply bg-white rounded-card shadow-card p-4;
+  }
+
+  .nuri-bubble {
+    @apply bg-primary/10 border border-primary/20 rounded-card rounded-tl-none p-4
+           font-nunito italic text-sm text-[#2D3748] relative;
+  }
+
+  .input-field {
+    @apply w-full border-2 border-gray-200 rounded-card px-4 py-3 font-nunito
+           focus:border-primary focus:outline-none transition-colors duration-150
+           min-h-[48px];
+  }
+
+  .label-field {
+    @apply block text-sm font-semibold text-gray-600;
+  }
+}
+
+/* Safe area for bottom nav on iOS */
+.pb-safe {
+  padding-bottom: env(safe-area-inset-bottom, 0px);
+}
+
+/* Streak fire animation */
+@keyframes flicker {
+  0%, 100% { transform: scaleY(1); }
+  50% { transform: scaleY(1.05); }
+}
+.fire-flicker {
+  animation: flicker 0.8s ease-in-out infinite;
+}
+
+/* XP bar fill animation */
+@keyframes fillBar {
+  from { width: 0%; }
+}
+.xp-bar-fill {
+  animation: fillBar 1s ease-out forwards;
+}

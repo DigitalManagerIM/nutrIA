@@ -1,0 +1,43 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 140 180" fill="none">
+  <!-- Confetti -->
+  <rect x="20" y="20" width="8" height="8" rx="2" fill="#FF9600" transform="rotate(20 20 20)"/>
+  <rect x="100" y="15" width="8" height="8" rx="2" fill="#58CC02" transform="rotate(-15 100 15)"/>
+  <rect x="115" y="50" width="6" height="6" rx="1" fill="#FF4B4B" transform="rotate(30 115 50)"/>
+  <rect x="10" y="60" width="6" height="6" rx="1" fill="#00B4D8" transform="rotate(-20 10 60)"/>
+  <rect x="125" y="80" width="8" height="8" rx="2" fill="#FFC800" transform="rotate(10 125 80)"/>
+  <rect x="5" y="90" width="7" height="7" rx="2" fill="#FF9600" transform="rotate(25 5 90)"/>
+  <circle cx="30" cy="35" r="4" fill="#FFC800"/>
+  <circle cx="110" cy="40" r="4" fill="#FF4B4B"/>
+  <circle cx="120" cy="100" r="3" fill="#58CC02"/>
+  <!-- Body -->
+  <ellipse cx="70" cy="125" rx="28" ry="32" fill="#8B6914"/>
+  <ellipse cx="70" cy="128" rx="18" ry="22" fill="#C49A3C"/>
+  <!-- Head -->
+  <circle cx="70" cy="74" r="28" fill="#8B6914"/>
+  <!-- Ears -->
+  <ellipse cx="45" cy="52" rx="8" ry="10" fill="#8B6914"/>
+  <ellipse cx="95" cy="52" rx="8" ry="10" fill="#8B6914"/>
+  <ellipse cx="45" cy="52" rx="5" ry="7" fill="#C49A3C"/>
+  <ellipse cx="95" cy="52" rx="5" ry="7" fill="#C49A3C"/>
+  <!-- Eyes (happy, slightly closed) -->
+  <path d="M43 72 Q50 66 57 72" stroke="#2D3748" stroke-width="3" stroke-linecap="round" fill="none"/>
+  <path d="M63 72 Q70 66 77 72" stroke="#2D3748" stroke-width="3" stroke-linecap="round" fill="none"/>
+  <!-- Nose -->
+  <ellipse cx="70" cy="83" rx="5" ry="3.5" fill="#5D4037"/>
+  <!-- Big open smile -->
+  <path d="M58 90 Q70 102 82 90" stroke="#5D4037" stroke-width="2.5" stroke-linecap="round" fill="none"/>
+  <ellipse cx="70" cy="94" rx="9" ry="5" fill="#FF9999" opacity="0.5"/>
+  <!-- Arms up -->
+  <path d="M42 115 Q20 95 18 75" stroke="#8B6914" stroke-width="10" stroke-linecap="round" fill="none"/>
+  <path d="M98 115 Q120 95 122 75" stroke="#8B6914" stroke-width="10" stroke-linecap="round" fill="none"/>
+  <!-- Star hands -->
+  <circle cx="18" cy="72" r="8" fill="#FFC800"/>
+  <text x="14" y="76" font-size="10" fill="white">★</text>
+  <circle cx="122" cy="72" r="8" fill="#FFC800"/>
+  <text x="118" y="76" font-size="10" fill="white">★</text>
+  <!-- Tail -->
+  <path d="M70 155 Q90 165 86 175" stroke="#8B6914" stroke-width="8" stroke-linecap="round" fill="none"/>
+  <!-- Legs (jumping) -->
+  <ellipse cx="56" cy="158" rx="10" ry="8" fill="#8B6914" transform="rotate(-15 56 158)"/>
+  <ellipse cx="82" cy="158" rx="10" ry="8" fill="#8B6914" transform="rotate(15 82 158)"/>
+</svg>

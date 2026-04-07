@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 170" fill="none">
+  <!-- Body -->
+  <ellipse cx="60" cy="115" rx="28" ry="35" fill="#8B6914"/>
+  <!-- Sports top -->
+  <ellipse cx="60" cy="112" rx="20" ry="22" fill="#00B4D8"/>
+  <!-- Head -->
+  <circle cx="60" cy="66" r="28" fill="#8B6914"/>
+  <!-- Headband -->
+  <rect x="34" y="56" width="52" height="10" rx="5" fill="#FF4B4B"/>
+  <rect x="52" y="50" width="16" height="8" rx="4" fill="#FF4B4B"/>
+  <!-- Ears -->
+  <ellipse cx="35" cy="66" rx="7" ry="9" fill="#8B6914"/>
+  <ellipse cx="85" cy="66" rx="7" ry="9" fill="#8B6914"/>
+  <!-- Eyes (determined) -->
+  <circle cx="50" cy="68" r="7" fill="white"/>
+  <circle cx="70" cy="68" r="7" fill="white"/>
+  <circle cx="51" cy="69" r="4" fill="#2D3748"/>
+  <circle cx="71" cy="69" r="4" fill="#2D3748"/>
+  <circle cx="52" cy="67" r="1.5" fill="white"/>
+  <circle cx="72" cy="67" r="1.5" fill="white"/>
+  <!-- Eyebrows (determined) -->
+  <path d="M44 61 Q50 58 56 61" stroke="#5D4037" stroke-width="2.5" stroke-linecap="round" fill="none"/>
+  <path d="M64 61 Q70 58 76 61" stroke="#5D4037" stroke-width="2.5" stroke-linecap="round" fill="none"/>
+  <!-- Nose -->
+  <ellipse cx="60" cy="77" rx="5" ry="3.5" fill="#5D4037"/>
+  <!-- Smile -->
+  <path d="M52 83 Q60 89 68 83" stroke="#5D4037" stroke-width="2" stroke-linecap="round" fill="none"/>
+  <!-- Arms with dumbbells -->
+  <path d="M32 108 Q14 100 12 88" stroke="#8B6914" stroke-width="10" stroke-linecap="round" fill="none"/>
+  <rect x="4" y="82" width="16" height="8" rx="4" fill="#2D3748"/>
+  <rect x="2" y="80" width="6" height="12" rx="3" fill="#2D3748"/>
+  <rect x="14" y="80" width="6" height="12" rx="3" fill="#2D3748"/>
+  <path d="M88 108 Q106 100 108 88" stroke="#8B6914" stroke-width="10" stroke-linecap="round" fill="none"/>
+  <rect x="100" y="82" width="16" height="8" rx="4" fill="#2D3748"/>
+  <rect x="98" y="80" width="6" height="12" rx="3" fill="#2D3748"/>
+  <rect x="110" y="80" width="6" height="12" rx="3" fill="#2D3748"/>
+  <!-- Tail -->
+  <path d="M60 148 Q80 158 76 168" stroke="#8B6914" stroke-width="8" stroke-linecap="round" fill="none"/>
+  <!-- Legs -->
+  <ellipse cx="48" cy="152" rx="10" ry="8" fill="#8B6914"/>
+  <ellipse cx="72" cy="152" rx="10" ry="8" fill="#8B6914"/>
+</svg>

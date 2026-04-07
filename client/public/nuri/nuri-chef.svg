@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 170" fill="none">
+  <!-- Body -->
+  <ellipse cx="60" cy="115" rx="28" ry="35" fill="#8B6914"/>
+  <!-- Chef apron -->
+  <ellipse cx="60" cy="118" rx="20" ry="26" fill="white"/>
+  <rect x="54" y="92" width="12" height="30" rx="4" fill="white"/>
+  <!-- Head -->
+  <circle cx="60" cy="68" r="28" fill="#8B6914"/>
+  <!-- Chef hat -->
+  <rect x="38" y="44" width="44" height="10" rx="4" fill="white"/>
+  <ellipse cx="60" cy="35" rx="20" ry="18" fill="white"/>
+  <!-- Ears -->
+  <ellipse cx="35" cy="65" rx="7" ry="9" fill="#8B6914"/>
+  <ellipse cx="85" cy="65" rx="7" ry="9" fill="#8B6914"/>
+  <!-- Eyes -->
+  <circle cx="50" cy="66" r="7" fill="white"/>
+  <circle cx="70" cy="66" r="7" fill="white"/>
+  <circle cx="51" cy="67" r="4" fill="#2D3748"/>
+  <circle cx="71" cy="67" r="4" fill="#2D3748"/>
+  <circle cx="52" cy="65" r="1.5" fill="white"/>
+  <circle cx="72" cy="65" r="1.5" fill="white"/>
+  <!-- Nose -->
+  <ellipse cx="60" cy="76" rx="5" ry="3.5" fill="#5D4037"/>
+  <!-- Big smile -->
+  <path d="M51 82 Q60 90 69 82" stroke="#5D4037" stroke-width="2.5" stroke-linecap="round" fill="none"/>
+  <!-- Arms holding ladle -->
+  <path d="M32 108 Q18 100 22 88" stroke="#8B6914" stroke-width="10" stroke-linecap="round" fill="none"/>
+  <!-- Ladle -->
+  <circle cx="16" cy="84" r="8" fill="#C49A3C" stroke="#8B6914" stroke-width="2"/>
+  <line x1="22" y1="88" x2="10" y2="76" stroke="#8B6914" stroke-width="3" stroke-linecap="round"/>
+  <!-- Other arm -->
+  <path d="M88 108 Q100 98 96 88" stroke="#8B6914" stroke-width="10" stroke-linecap="round" fill="none"/>
+  <!-- Tail -->
+  <path d="M60 148 Q80 158 76 168" stroke="#8B6914" stroke-width="8" stroke-linecap="round" fill="none"/>
+  <!-- Legs -->
+  <ellipse cx="48" cy="152" rx="10" ry="8" fill="#8B6914"/>
+  <ellipse cx="72" cy="152" rx="10" ry="8" fill="#8B6914"/>
+</svg>

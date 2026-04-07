@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 170" fill="none">
+  <!-- Body -->
+  <ellipse cx="60" cy="115" rx="28" ry="35" fill="#8B6914"/>
+  <ellipse cx="60" cy="118" rx="18" ry="24" fill="#C49A3C"/>
+  <!-- Head -->
+  <circle cx="60" cy="66" r="28" fill="#8B6914"/>
+  <!-- Ears -->
+  <ellipse cx="36" cy="44" rx="8" ry="10" fill="#8B6914"/>
+  <ellipse cx="84" cy="44" rx="8" ry="10" fill="#8B6914"/>
+  <ellipse cx="36" cy="44" rx="5" ry="7" fill="#C49A3C"/>
+  <ellipse cx="84" cy="44" rx="5" ry="7" fill="#C49A3C"/>
+  <!-- Eyes (looking up-right, thinking) -->
+  <circle cx="50" cy="64" r="7" fill="white"/>
+  <circle cx="70" cy="64" r="7" fill="white"/>
+  <circle cx="52" cy="62" r="4" fill="#2D3748"/>
+  <circle cx="72" cy="62" r="4" fill="#2D3748"/>
+  <circle cx="53" cy="61" r="1.5" fill="white"/>
+  <circle cx="73" cy="61" r="1.5" fill="white"/>
+  <!-- Nose -->
+  <ellipse cx="60" cy="74" rx="5" ry="3.5" fill="#5D4037"/>
+  <!-- Thoughtful expression -->
+  <path d="M53 80 Q60 83 67 80" stroke="#5D4037" stroke-width="2" stroke-linecap="round" fill="none"/>
+  <!-- Arm with chin resting -->
+  <path d="M32 110 Q24 100 30 90" stroke="#8B6914" stroke-width="10" stroke-linecap="round" fill="none"/>
+  <!-- Paw under chin -->
+  <ellipse cx="56" cy="88" rx="10" ry="7" fill="#8B6914"/>
+  <ellipse cx="56" cy="89" rx="7" ry="5" fill="#C49A3C"/>
+  <!-- Other arm relaxed -->
+  <path d="M88 110 Q98 100 94 90" stroke="#8B6914" stroke-width="10" stroke-linecap="round" fill="none"/>
+  <!-- Thought bubbles -->
+  <circle cx="90" cy="42" r="3" fill="#00B4D8" opacity="0.5"/>
+  <circle cx="98" cy="34" r="5" fill="#00B4D8" opacity="0.6"/>
+  <circle cx="108" cy="24" r="8" fill="#00B4D8" opacity="0.7"/>
+  <text x="103" y="28" font-size="10" fill="white">?</text>
+  <!-- Tail -->
+  <path d="M60 148 Q80 158 76 168" stroke="#8B6914" stroke-width="8" stroke-linecap="round" fill="none"/>
+  <!-- Legs -->
+  <ellipse cx="48" cy="152" rx="10" ry="8" fill="#8B6914"/>
+  <ellipse cx="72" cy="152" rx="10" ry="8" fill="#8B6914"/>
+</svg>

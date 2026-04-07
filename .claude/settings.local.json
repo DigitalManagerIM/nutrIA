@@ -1,0 +1,21 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(npm install:*)",
+      "Bash(npx tsc:*)",
+      "Bash(grep -rn \"XPBar\\\\|StreakCounter\\\\|xpGained\\\\|xpInCurrentLevel\" D:/proyectos/nutria --include=*.tsx --include=*.ts)",
+      "Bash(npx prisma:*)",
+      "Bash(curl -s http://localhost:3000/health)",
+      "Bash(npm run:*)",
+      "Bash(xargs ls:*)",
+      "Bash(python -:*)",
+      "Bash(for f:*)",
+      "Bash(do echo:*)",
+      "Read(//d/proyectos/nutria/client/src/pages/**)",
+      "Bash(done)",
+      "Bash(ipconfig)",
+      "Bash(ip addr:*)",
+      "Bash(\"/d/proyectos/nutria/server/.env\")"
+    ]
+  }
+}
