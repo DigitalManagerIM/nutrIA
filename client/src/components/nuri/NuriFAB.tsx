@@ -1,12 +1,12 @@
 import { motion } from 'framer-motion';
 import { useNavigate, useLocation } from 'react-router-dom';
+import NuriAvatar from './NuriAvatar';
 
 export default function NuriFAB() {
   const navigate = useNavigate();
   const location = useLocation();
 
   if (location.pathname === '/onboarding') return null;
-  // Hide FAB on chat page since chat is now a main tab
   if (location.pathname === '/chat') return null;
 
   return (
@@ -18,11 +18,7 @@ export default function NuriFAB() {
       animate={{ y: [0, -4, 0], transition: { repeat: Infinity, duration: 2, ease: 'easeInOut' } }}
       aria-label="Hablar con NutrIA"
     >
-      <img
-        src="/nuri/nutria para chat.png"
-        alt="NutrIA"
-        className="w-full h-full object-contain p-1"
-      />
+      <NuriAvatar state="chat" size={56} animate={false} className="w-full h-full object-contain p-1" />
     </motion.button>
   );
 }
