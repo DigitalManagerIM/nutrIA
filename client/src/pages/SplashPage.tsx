@@ -21,7 +21,7 @@ export default function SplashPage() {
   }, [user, loading]);
 
   return (
-    <div className="min-h-screen flex flex-col items-center justify-center bg-gradient-to-b from-primary to-[#0096B7] relative overflow-hidden">
+    <div className="min-h-screen flex flex-col items-center justify-center bg-gradient-to-b from-[#89BEC8] to-[#6AAAB5] relative overflow-hidden">
       {/* Water ripples */}
       {[1, 2, 3].map((i) => (
         <motion.div
