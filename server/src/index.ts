@@ -19,6 +19,9 @@ import profileRoutes from './routes/profile';
 const app = express();
 const PORT = process.env.PORT || 3000;
 
+// Trust Render/Vercel proxy (required for rate limiter and IP detection)
+app.set('trust proxy', 1);
+
 // Security & parsing middleware
 app.use(helmet());
 
