@@ -113,7 +113,7 @@ export default function WeightPage() {
             <AnimatePresence mode="wait">
               {useSmartScale ? (
                 <motion.div key="smart" initial={{ opacity: 0, height: 0 }} animate={{ opacity: 1, height: 'auto' }} exit={{ opacity: 0, height: 0 }}>
-                  <input ref={fileRef} type="file" accept="image/*" capture="environment" className="hidden" onChange={handleScaleFile} />
+                  <input ref={fileRef} type="file" accept="image/*" className="hidden" onChange={handleScaleFile} />
                   {scalePreview ? (
                     <div className="relative">
                       <img src={scalePreview} alt="Báscula" className="w-full h-48 object-cover rounded-card" />

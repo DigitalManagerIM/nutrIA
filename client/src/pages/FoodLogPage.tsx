@@ -139,7 +139,7 @@ export default function FoodLogPage() {
               {/* Photo */}
               <div className="card">
                 <h3 className="font-bold text-gray-700 mb-3">Foto del plato</h3>
-                <input ref={fileRef} type="file" accept="image/*" capture="environment" className="hidden" onChange={handleFileChange} />
+                <input ref={fileRef} type="file" accept="image/*" className="hidden" onChange={handleFileChange} />
                 {preview ? (
                   <div className="relative">
                     <img src={preview} alt="preview" className="w-full h-48 object-cover rounded-card" />
