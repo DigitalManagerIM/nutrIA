@@ -75,7 +75,8 @@ export default function ChatPage() {
       if (currentFile) form.append('image', currentFile);
 
       const token = localStorage.getItem('accessToken');
-      const res = await fetch('/api/chat/message', {
+      const apiBase = import.meta.env.VITE_API_URL || '/api';
+      const res = await fetch(`${apiBase}/chat/message`, {
         method: 'POST',
         headers: { Authorization: `Bearer ${token}` },
         body: form,
