@@ -151,7 +151,7 @@ export default function ChatPage() {
     <div className="flex flex-col h-screen bg-bg-light">
       {/* Header */}
       <div className="bg-gradient-to-r from-primary to-[#0096B7] px-4 pt-10 pb-3 flex items-center gap-3 flex-shrink-0">
-        <NuriAvatar state="normal" size={44} animate={false} />
+        <NuriAvatar state="chat" size={44} animate={false} />
         <div className="flex-1">
           <h1 className="text-white font-extrabold text-lg leading-tight">NutrIA</h1>
           <p className="text-white/70 text-xs">Tu coach de nutrición y entreno</p>
@@ -172,7 +172,7 @@ export default function ChatPage() {
 
         {!loading && messages.length === 0 && (
           <div className="flex flex-col items-center gap-3 py-8 text-center">
-            <NuriAvatar state="normal" size={90} />
+            <NuriAvatar state="chat" size={90} />
             <p className="text-gray-700 font-bold text-lg">¡Hola! Soy NutrIA 🦦</p>
             <p className="text-gray-400 text-sm max-w-xs leading-relaxed">
               Conozco tu perfil completo: macros, peso, analítica y objetivos. Pregúntame lo que quieras.
@@ -196,7 +196,7 @@ export default function ChatPage() {
               className={`flex ${msg.role === 'user' ? 'justify-end' : 'justify-start items-end gap-2'}`}
               initial={{ opacity: 0, y: 8 }} animate={{ opacity: 1, y: 0 }}>
               {msg.role === 'assistant' && (
-                <NuriAvatar state="normal" size={30} animate={false} className="mb-1 flex-shrink-0" />
+                <NuriAvatar state="chat" size={30} animate={false} className="mb-1 flex-shrink-0" />
               )}
               <div className={`max-w-[82%] px-4 py-3 rounded-2xl text-sm leading-relaxed
                 ${msg.role === 'user'

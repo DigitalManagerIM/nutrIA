@@ -9,7 +9,8 @@ export type NuriState =
   | 'thinking'
   | 'worried'
   | 'angry'
-  | 'success';
+  | 'success'
+  | 'chat';
 
 interface Props {
   state?: NuriState;
@@ -29,6 +30,7 @@ const stateMap: Record<NuriState, string> = {
   success:     '/nuri/nutria%20buen%20trabajo.png',
   worried:     '/nuri/nutria%20enfadada.png',
   angry:       '/nuri/nutria%20enfadada.png',
+  chat:        '/nuri/nutria%20para%20chat.png',
 };
 
 export default function NuriAvatar({ state = 'normal', size = 80, animate = true, className = '' }: Props) {
