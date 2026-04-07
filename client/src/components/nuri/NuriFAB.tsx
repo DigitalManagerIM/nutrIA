@@ -19,7 +19,7 @@ export default function NuriFAB() {
       aria-label="Hablar con NutrIA"
     >
       <img
-        src="/nuri/nutria%20personaje%20principal.png"
+        src="/nuri/nutria para chat.png"
         alt="NutrIA"
         className="w-full h-full object-contain p-1"
       />

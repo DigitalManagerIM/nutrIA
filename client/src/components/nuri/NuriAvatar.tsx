@@ -21,16 +21,16 @@ interface Props {
 
 // PNG illustrations — map each state to the correct character image
 const stateMap: Record<NuriState, string> = {
-  normal:      '/nuri/nutria%20personaje%20principal.png',
-  thinking:    '/nuri/nutria%20personaje%20principal.png',
-  fitness:     '/nuri/nutria%20personaje%20principal.png',
-  chef:        '/nuri/nutria%20para%20comidas.png',
-  scientist:   '/nuri/nutria%20para%20anliticas.png',
-  celebrating: '/nuri/nutria%20buen%20trabajo.png',
-  success:     '/nuri/nutria%20buen%20trabajo.png',
-  worried:     '/nuri/nutria%20enfadada.png',
-  angry:       '/nuri/nutria%20enfadada.png',
-  chat:        '/nuri/nutria%20para%20chat.png',
+  normal:      '/nuri/nutria personaje principal.png',
+  thinking:    '/nuri/nutria personaje principal.png',
+  fitness:     '/nuri/nutria personaje principal.png',
+  chef:        '/nuri/nutria para comidas.png',
+  scientist:   '/nuri/nutria para analiticas.png',
+  celebrating: '/nuri/nutria buen trabajo.png',
+  success:     '/nuri/nutria buen trabajo.png',
+  worried:     '/nuri/nutria enfadada.png',
+  angry:       '/nuri/nutria enfadada.png',
+  chat:        '/nuri/nutria para chat.png',
 };
 
 export default function NuriAvatar({ state = 'normal', size = 80, animate = true, className = '' }: Props) {
