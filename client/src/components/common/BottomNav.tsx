@@ -84,9 +84,7 @@ export default function BottomNav() {
                 <img
                   src={tab.iconSrc}
                   alt={tab.label}
-                  width={24}
-                  height={24}
-                  className={`transition-all ${active ? 'scale-110' : 'opacity-40'}`}
+                  className={`w-6 h-6 object-contain transition-all ${active ? 'scale-110' : 'opacity-40'}`}
                 />
                 <span className={`text-[10px] font-semibold mt-0.5 ${active ? 'text-primary' : 'text-gray-400'}`}>{tab.label}</span>
               </NavLink>
@@ -118,9 +116,7 @@ export default function BottomNav() {
                 <img
                   src={tab.iconSrc}
                   alt={tab.label}
-                  width={24}
-                  height={24}
-                  className={`transition-all ${active ? 'scale-110' : 'opacity-40'}`}
+                  className={`w-6 h-6 object-contain transition-all ${active ? 'scale-110' : 'opacity-40'}`}
                 />
                 <span className={`text-[10px] font-semibold mt-0.5 ${active ? 'text-primary' : 'text-gray-400'}`}>{tab.label}</span>
               </NavLink>
