@@ -4,6 +4,8 @@ import prisma from '../prisma/client';
 import { extractSmartScaleData } from '../services/ai';
 import { addXp, XP_REWARDS, updateStreak, checkAndGrantAchievements } from '../services/gamification';
 import { triggerReEvaluation } from '../services/evaluation';
+import { storeFile } from '../config/firebase';
+import path from 'path';
 
 export async function logWeight(req: AuthRequest, res: Response): Promise<void> {
   const userId = req.userId!;
@@ -13,7 +15,12 @@ export async function logWeight(req: AuthRequest, res: Response): Promise<void> 
   let entry;
 
   if (file) {
-    const extracted = await extractSmartScaleData(file.path);
+    // Analyse directly from buffer (memoryStorage — no file.path)
+    const extracted = await extractSmartScaleData(file.buffer, file.mimetype);
+
+    // Persist image (Firebase in prod, disk in dev)
+    const filename = `scale-${Date.now()}${path.extname(file.originalname)}`;
+    const storedPath = await storeFile(file.buffer, file.mimetype, userId, filename).catch(() => '');
 
     entry = await prisma.weightEntry.create({
       data: {
@@ -26,7 +33,7 @@ export async function logWeight(req: AuthRequest, res: Response): Promise<void> 
         basalMetabolism: extracted.basalMetabolism,
         boneMassKg: extracted.boneMassKg,
         source: 'smart_scale_photo',
-        imagePath: file.path,
+        imagePath: storedPath || null,
       },
     });
   } else {
